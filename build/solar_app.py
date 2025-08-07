@@ -4,7 +4,7 @@ import pandas as pd
 import math
 
 # Load appliance specs from Excel
-file_path = r"C:\Users\DELL\Downloads\Solar_System_Sizing_Calculator draft2SC.xlsx"
+file_path = r"https://github.com/k4irshad-star/solar_app/blob/main/build/Solar_System_Sizing_Calculator%20draft2SC.xlsx"
 xls = pd.ExcelFile(file_path)
 appliance_specs = xls.parse('ApplianceSpecs')  # Sheet with appliance data
 
@@ -39,6 +39,7 @@ st.write(f"Energy Required per Day: {energy_per_day_kwh:.2f} kWh")
 st.write(f"Solar Panel Size Required: {solar_panel_kW_rounded:.1f} kWp")
 st.write(f"Capital Cost: ${capital_cost:.2f}")
 st.write(f"Income per Day: ${income_per_day:.2f}")
+
 
 
 
